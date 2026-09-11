@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VeriCore - Evidence-driven digital content verification">
+    <title>VeriCore — Verify What Matters</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+```
+<div class="background-grid"></div>
+<div class="background-glow glow-one"></div>
+<div class="background-glow glow-two"></div>
+
+<header class="navbar">
+    <a href="/" class="brand">
+        <span class="brand-mark">V</span>
+        <span>VERICORE</span>
+    </a>
+
+    <div class="nav-status">
+        <span class="status-dot"></span>
+        VERIFICATION ENGINE ONLINE
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="eyebrow">
+            <span></span>
+            DIGITAL EVIDENCE INTELLIGENCE
+        </div>
+
+        <h1>
+            Verify what<br>
+            <span>you see.</span>
+        </h1>
+
+        <p class="hero-description">
+            VeriCore analyzes digital content, retrieves supporting evidence,
+            evaluates source trust, and produces an evidence-backed verification result.
+        </p>
+    </section>
+
+    <section class="verification-panel">
+
+        <div class="panel-header">
+            <div>
+                <div class="panel-label">VERIFICATION INPUT</div>
+                <h2>What do you want to verify?</h2>
+            </div>
+
+            <div class="secure-badge">
+                <span>◆</span> SECURE ANALYSIS
+            </div>
+        </div>
+
+        <div class="verification-types">
+
+            <button class="type-button active" data-type="website">
+                <span class="type-icon">⌁</span>
+                <span>
+                    <strong>Website</strong>
+                    <small>URL & domain</small>
+                </span>
+            </button>
+
+            <button class="type-button" data-type="article">
+                <span class="type-icon">≡</span>
+                <span>
+                    <strong>Article</strong>
+                    <small>News & research</small>
+                </span>
+            </button>
+
+            <button class="type-button" data-type="tweet">
+                <span class="type-icon">𝕏</span>
+                <span>
+                    <strong>Post</strong>
+                    <small>Social content</small>
+                </span>
+            </button>
+
+            <button class="type-button" data-type="image">
+                <span class="type-icon">▧</span>
+                <span>
+                    <strong>Image</strong>
+                    <small>Visual media</small>
+                </span>
+            </button>
+
+            <button class="type-button" data-type="video">
+                <span class="type-icon">▶</span>
+                <span>
+                    <strong>Video</strong>
+                    <small>Video media</small>
+                </span>
+            </button>
+
+            <button class="type-button" data-type="pdf">
+                <span class="type-icon">□</span>
+                <span>
+                    <strong>PDF</strong>
+                    <small>Documents</small>
+                </span>
+            </button>
+
+        </div>
+
+        <form id="verification-form">
+
+            <div class="input-area">
+
+                <label for="content-input" id="input-label">
+                    ENTER WEBSITE URL
+                </label>
+
+                <textarea
+                    id="content-input"
+                    placeholder="https://example.com"
+                    autocomplete="off"
+                    spellcheck="false"
+                ></textarea>
+
+                <div class="input-footer">
+                    <span id="input-hint">
+                        Paste a URL to begin verification.
+                    </span>
+
+                    <span id="character-count">0 characters</span>
+                </div>
+
+            </div>
+
+            <div class="upload-area" id="upload-area">
+                <input type="file" id="file-input" hidden>
+
+                <div class="upload-icon">↑</div>
+
+                <div>
+                    <strong>Or upload a file</strong>
+                    <span>Drag & drop or click to browse</span>
+                </div>
+
+                <button type="button" id="browse-button">
+                    Browse
+                </button>
+            </div>
+
+            <button class="verify-button" type="submit" id="verify-button">
+                <span class="verify-icon">◈</span>
+                VERIFY CONTENT
+                <span class="arrow">→</span>
+            </button>
+
+        </form>
+
+    </section>
+
+    <section class="processing-panel hidden" id="processing-panel">
+
+        <div class="processing-header">
+            <div class="scanner"></div>
+
+            <div>
+                <div class="panel-label">VERICORE ENGINE</div>
+                <h2 id="processing-title">Analyzing evidence...</h2>
+            </div>
+
+            <div class="processing-percent" id="processing-percent">
+                0%
+            </div>
+        </div>
+
+        <div class="progress-track">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <div class="processing-steps">
+
+            <div class="process-step active" id="step-retrieve">
+                <span>01</span>
+                <div>
+                    <strong>Retrieval Layer</strong>
+                    <small>Gathering external evidence</small>
+                </div>
+            </div>
+
+            <div class="process-step" id="step-source">
+                <span>02</span>
+                <div>
+                    <strong>Source Analysis</strong>
+                    <small>Evaluating source trust</small>
+                </div>
+            </div>
+
+            <div class="process-step" id="step-evidence">
+                <span>03</span>
+                <div>
+                    <strong>Evidence Graph</strong>
+                    <small>Connecting supporting signals</small>
+                </div>
+            </div>
+
+            <div class="process-step" id="step-score">
+                <span>04</span>
+                <div>
+                    <strong>Confidence Score</strong>
+                    <small>Calculating verification result</small>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="results-panel hidden" id="results-panel">
+
+        <div class="results-top">
+            <div>
+                <div class="panel-label">VERIFICATION RESULT</div>
+                <h2 id="result-title">Analysis Complete</h2>
+            </div>
+
+            <div class="result-badge" id="result-badge">
+                ANALYZED
+            </div>
+        </div>
+
+        <div class="result-grid">
+
+            <div class="confidence-card">
+                <div class="confidence-label">CONFIDENCE</div>
+
+                <div class="confidence-number">
+                    <span id="confidence-score">--</span>
+                    <small>/100</small>
+                </div>
+
+                <div class="confidence-meter">
+                    <div id="confidence-meter-fill"></div>
+                </div>
+
+                <p id="confidence-description">
+                    Verification confidence calculated from available evidence.
+                </p>
+            </div>
+
+            <div class="signals-card">
+                <div class="card-title">VERIFICATION SIGNALS</div>
+
+                <div id="signals-list">
+                    <div class="signal">
+                        <span class="signal-indicator"></span>
+                        <span>Processing result...</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="evidence-card">
+            <div class="card-title">EVIDENCE & ANALYSIS</div>
+
+            <pre id="evidence-output">No evidence returned.</pre>
+        </div>
+
+        <button class="new-verification" id="new-verification">
+            ← NEW VERIFICATION
+        </button>
+
+    </section>
+
+    <section class="architecture">
+
+        <div class="section-label">HOW IT WORKS</div>
+
+        <h2>Evidence before conclusions.</h2>
+
+        <div class="architecture-flow">
+
+            <div class="architecture-node">
+                <span>01</span>
+                <strong>INPUT</strong>
+                <small>Content enters VeriCore</small>
+            </div>
+
+            <div class="flow-line">→</div>
+
+            <div class="architecture-node">
+                <span>02</span>
+                <strong>RETRIEVE</strong>
+                <small>External evidence gathered</small>
+            </div>
+
+            <div class="flow-line">→</div>
+
+            <div class="architecture-node">
+                <span>03</span>
+                <strong>ANALYZE</strong>
+                <small>Signals are evaluated</small>
+            </div>
+
+            <div class="flow-line">→</div>
+
+            <div class="architecture-node">
+                <span>04</span>
+                <strong>SCORE</strong>
+                <small>Confidence is calculated</small>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <span>VERICORE</span>
+    <span>Evidence-driven digital verification</span>
+    <span>v2.0</span>
+</footer>
+
+<script src="/app.js"></script>
+```
+
+</body>
+</html>
