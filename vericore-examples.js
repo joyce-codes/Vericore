@@ -81,7 +81,6 @@ async function exampleArticle() {
   console.log('Flags:', result.scores.flags.length);
   return result;
 }
-
 // ─────────────────────────────────────────────────────────────────────────────
 // EXAMPLE 2 — Check if an Instagram account is authentic
 // ─────────────────────────────────────────────────────────────────────────────
