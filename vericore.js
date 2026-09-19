@@ -46,9 +46,7 @@
  *   Every verification outcome feeds back into source trust, AI detector
  *   calibration, domain scores, and identity confidence.
  */
-
 'use strict';
-
 // ─────────────────────────────────────────────────────────────────────────────
 // SECTION 1 — EVIDENCE OBJECT SCHEMA
 // ─────────────────────────────────────────────────────────────────────────────
