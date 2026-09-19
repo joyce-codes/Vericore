@@ -27,7 +27,6 @@ import { HuggingFaceClient, ImageAIDetector, TextAIDetector, AudioAIDetector, Vi
 import { WaybackClient, RDAPClient, SearchClient, BlockchainVerifier, VectorStore, EmailVerifier, SSLChecker, SafeBrowsingClient } from './retrieval.js';
 import { SourceTrustEngine } from './source-trust.js';
 import { Tier1Analyzer, Tier2Analyzer, Tier3Analyzer, handleQueueMessage } from './pipeline.js';
-
 // ─────────────────────────────────────────────────────────────────────────────
 // CORS HEADERS (allow all origins for a public API)
 // ─────────────────────────────────────────────────────────────────────────────
