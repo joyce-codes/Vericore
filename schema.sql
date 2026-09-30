@@ -7,7 +7,7 @@
 -- D1 is Cloudflare's SQLite-compatible serverless database.
 -- Free tier: 5 million rows read/day, 100K writes/day, 5GB storage.
 -- ============================================================
-m
+
 PRAGMA journal_mode = WAL;
 PRAGMA foreign_keys = ON;
 
