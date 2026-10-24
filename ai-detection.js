@@ -10,7 +10,6 @@
  *
 
 
-
  *  TEXT   → Multiple signals fused:
  *           - Perplexity via HuggingFace GPT-2 scoring (free)
  *           - Burstiness (pure math — human text has higher variance)
